@@ -28,5 +28,5 @@ Otherwise (i.e. if \code{arithmetic} is set to \code{TRUE}), the values are inte
 as percentages given as numbers between 0 and 1.
 }
 \examples{
-rgb2col(c(0,139,139))
+rgb2col(c(0, 139, 139))
 }

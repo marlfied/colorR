@@ -33,5 +33,5 @@ Otherwise (i.e. if \code{arithmetic} is set to \code{TRUE}), the values are inte
 as percentages given as numbers between 0 and 1.
 }
 \examples{
-mix("aquamarine4","#FC6C85")
+mix("aquamarine4", "#FC6C85")
 }
