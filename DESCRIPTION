@@ -14,5 +14,6 @@ Suggests:
     spelling
 Language: en-US
 Imports: 
+    graphics,
     grDevices,
     methods
