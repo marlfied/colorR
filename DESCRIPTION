@@ -1,10 +1,11 @@
 Package: colorR
-Title: What the Package Does (One Line, Title Case)
+Title: Working with diffrent color formats in R
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Marleen", "Fiederer", email = "fiederer.marleen@gmail.com", role = c("aut", "cre"))
+Description: Convert different formats for colors: rgb to hex and vise versa, color name 
+    in R to hex/rgb, and vise versa. Mixing to colors into one (rgb, hex, and color name allowed).
+    Showing the color in a rectangular plot.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -12,3 +13,6 @@ RoxygenNote: 7.3.2
 Suggests: 
     spelling
 Language: en-US
+Imports: 
+    grDevices,
+    methods
