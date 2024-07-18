@@ -1,10 +1,10 @@
 convert2rgb <- function(color) {
-    if(startsWith(color, "#")){
-      return(hex2rgb(color))
-    } else {
-      c <- c(t(col2rgb(color)))
-      return(c)
-    }
+  if (startsWith(color, "#")) {
+    return(hex2rgb(color))
+  } else {
+    c <- c(t(col2rgb(color)))
+    return(c)
+  }
 }
 
 #' Mix to colors
@@ -30,20 +30,16 @@ convert2rgb <- function(color) {
 #' @export
 #'
 #' @examples
-#' mix("aquamarine4","#FC6C85")
+#' mix("aquamarine4", "#FC6C85")
 mix <- function(color1, color2, arithmetic = FALSE, as_HEX = FALSE) {
-  color1 <- if(is.character(color1)) convert2rgb(color1) else color1
-  color2 <- if(is.character(color2)) convert2rgb(color2) else color2
+  color1 <- if (is.character(color1)) convert2rgb(color1) else color1
+  color2 <- if (is.character(color2)) convert2rgb(color2) else color2
 
-  result <- (color1+color2)/2
+  result <- (color1 + color2) / 2
 
-  if(as_HEX){
+  if (as_HEX) {
     return(rgb2hex(result, arithmetic))
   } else {
     return(result)
   }
 }
-
-
-
-

@@ -30,8 +30,8 @@ rgb2hex <- function(color, arithmetic = FALSE) {
       " All entries have to be non-negative."
     ))
   }
-  if(arithmetic) {
-    color <- ceiling(color*255)
+  if (arithmetic) {
+    color <- ceiling(color * 255)
   }
   return(paste("#", hex(color[1]), hex(color[2]), hex(color[3]), sep = ""))
 }
@@ -60,8 +60,8 @@ rgb2hex <- function(color, arithmetic = FALSE) {
 #' hex2rgb("#82AC85")
 hex2rgb <- function(color, arithmetic = FALSE) {
   mat <- col2rgb(color)
-  if(arithmetic) {
-    mat <- mat/255
+  if (arithmetic) {
+    mat <- mat / 255
   }
   return(c(mat[1], mat[2], mat[3]))
 }
@@ -107,7 +107,7 @@ hex2col <- function(color, distinct = TRUE) {
   result <- colors(distinct)[
     tolower(col2hex(colors(distinct))) == tolower(color)
   ]
-  if(identical(result, character(0))){
+  if (identical(result, character(0))) {
     return(NULL)
   } else {
     return(result)
@@ -135,7 +135,7 @@ hex2col <- function(color, distinct = TRUE) {
 #' @export
 #'
 #' @examples
-#' rgb2col(c(0,139,139))
+#' rgb2col(c(0, 139, 139))
 rgb2col <- function(color, arithmetic = FALSE) {
   return(hex2col(rgb2hex(color, arithmetic)))
 }
