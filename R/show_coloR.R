@@ -1,14 +1,14 @@
 #' Show color
 #'
-#' Given a color in format R-name as character, HEX as character or RGB as vector length 3,
-#' return a rectangular plot of the color with the argument written in the middle.
+#' Given a color by its R-name as a character, in HEX format as character or RGB format as a vector of length 3,
+#' return a rectangular plot of the color with the color written in the middle in the same format as the argument.
 #'
 #'
-#' @param color character or vector length 3, color in R-name, HEX or vector length 3
-#' @param text_color character or vector length 3, color in R-name, HEX or vector length 3,
-#' default: 'black'.
+#' @param color Character or numeric vector of length 3, the color as R-name, HEX or RGB.
+#' @param text_color Character or numeric vector of length 3, the text color as R-name, HEX or RGB.
+#' (default: 'black')
 #'
-#' @return plot
+#' @return A plot as described above.
 #' @export
 #'
 #' @examples

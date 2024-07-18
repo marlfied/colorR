@@ -13,11 +13,10 @@ hex2rgb(color, arithmetic = FALSE)
 See 'Details'.(default: \code{FALSE})}
 }
 \value{
-numeric vector length 3
+Numeric vector of length 3.
 }
 \description{
-Return a color in RGB format given a color in HEX format as character,
-return the result as a numeric vector length 3.
+Return a color in RGB format given its representation in HEX format as a character.
 }
 \details{
 Two formats for the RGB values are implemented which can be accessed with

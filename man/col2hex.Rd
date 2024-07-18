@@ -7,13 +7,13 @@
 col2hex(color)
 }
 \arguments{
-\item{color}{Vector with R-color names}
+\item{color}{Vector with R-color names.}
 }
 \value{
-Character
+A character.
 }
 \description{
-Return a color in HEX format as a character given a R-color name as character.
+Get the HEX format of a color given its R-color name as a character.
 }
 \examples{
 col2hex(c("lightblue", "aquamarine4"))

@@ -13,11 +13,10 @@ rgb2col(color, arithmetic = FALSE)
 (default: \code{FALSE})}
 }
 \value{
-character
+A character.
 }
 \description{
-Return R color name as character given a color in RGB
-format as a numeric vector of length 3.
+Return the R color name of a color given in RGB format.
 }
 \details{
 Two formats for the RGB values are implemented which can be accessed with

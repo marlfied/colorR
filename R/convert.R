@@ -4,7 +4,7 @@ hex <- function(x) {
 
 #' Convert RGB to HEX
 #'
-#' Return a color in HEX format given a color in RGB format, a numeric vector of length 3.
+#' Return a color in HEX format given a color in RGB format as a numeric vector of length 3.
 #' The result is returned as a character.
 #'
 #' Two formats for the RGB values are implemented which can be accessed with
@@ -39,8 +39,7 @@ rgb2hex <- function(color, arithmetic = FALSE) {
 
 #' Convert HEX to RGB
 #'
-#' Return a color in RGB format given a color in HEX format as character,
-#' return the result as a numeric vector length 3.
+#' Return a color in RGB format given its representation in HEX format as a character.
 #'
 #' Two formats for the RGB values are implemented which can be accessed with
 #' the `arithmetic` argument.
@@ -53,7 +52,7 @@ rgb2hex <- function(color, arithmetic = FALSE) {
 #' @param arithmetic Logical, whether to use arithmetic scaling for the result.
 #' See 'Details'.(default: `FALSE`)
 #'
-#' @return numeric vector length 3
+#' @return Numeric vector of length 3.
 #' @export
 #'
 #' @examples
@@ -69,11 +68,11 @@ hex2rgb <- function(color, arithmetic = FALSE) {
 
 #' Convert color name to HEX
 #'
-#' Return a color in HEX format as a character given a R-color name as character.
+#' Get the HEX format of a color given its R-color name as a character.
 #'
-#' @param color Vector with R-color names
+#' @param color Vector with R-color names.
 #'
-#' @return Character
+#' @return A character.
 #' @export
 #'
 #' @examples
@@ -89,16 +88,16 @@ col2hex <- function(color) {
 
 #' Convert HEX to color name
 #'
-#' Return a R-color name as a character given a color in HEX format as character.
+#' Return a R-color name given a color in HEX format as character.
 #'
 #' In R one color can have multiple names, e.g. 'white' and 'grey100'.
 #' By setting distinct to `FALSE`, the function returns all possible names.
 #'
 #' @param color A character, color formatted as '#______' in HEX code
-#' @param distinct Logical, whether the result should be one distinct name or more
-#' (see 'Details'). (default: `TRUE`)
+#' @param distinct Logical, whether the result should be one distinct name or all available ones.
+#' See 'Details'. (default: `TRUE`)
 #'
-#' @return character
+#' @return A character.
 #' @export
 #'
 #' @examples
@@ -117,8 +116,7 @@ hex2col <- function(color, distinct = TRUE) {
 
 #' Convert RGB to R color name
 #'
-#' Return R color name as character given a color in RGB
-#' format as a numeric vector of length 3.
+#' Return the R color name of a color given in RGB format.
 #'
 #' Two formats for the RGB values are implemented which can be accessed with
 #' the `arithmetic` argument.
@@ -131,7 +129,7 @@ hex2col <- function(color, distinct = TRUE) {
 #' @param arithmetic Logical, whether to use arithmetic scaling. See 'Details'.
 #' (default: `FALSE`)
 #'
-#' @return character
+#' @return A character.
 #' @export
 #'
 #' @examples

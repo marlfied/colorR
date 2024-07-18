@@ -9,14 +9,14 @@ hex2col(color, distinct = TRUE)
 \arguments{
 \item{color}{A character, color formatted as '#______' in HEX code}
 
-\item{distinct}{Logical, whether the result should be one distinct name or more
-(see 'Details'). (default: \code{TRUE})}
+\item{distinct}{Logical, whether the result should be one distinct name or all available ones.
+See 'Details'. (default: \code{TRUE})}
 }
 \value{
-character
+A character.
 }
 \description{
-Return a R-color name as a character given a color in HEX format as character.
+Return a R-color name given a color in HEX format as character.
 }
 \details{
 In R one color can have multiple names, e.g. 'white' and 'grey100'.

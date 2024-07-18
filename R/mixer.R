@@ -10,8 +10,8 @@ convert2rgb <- function(color) {
 #' Mix to colors
 #'
 #' Return color in HEX or RGB format given two colors which can be in HEX format
-#' as character, R-name also as character or RGB format as vector length 3.
-#' The result is returned as character or vector length 3.
+#' as character, R-name also as character or RGB format as a numeric vector of length 3.
+#' The result is returned in HEX format as a character or in RGB format as a vector of length 3.
 #'
 #' Two formats for the RGB values are implemented which can be accessed with
 #' the `arithmetic` argument.
@@ -20,13 +20,13 @@ convert2rgb <- function(color) {
 #' Otherwise (i.e. if `arithmetic` is set to `TRUE`), the values are interpreted
 #' as percentages given as numbers between 0 and 1.
 #'
-#' @param color1 character or vector length 3, color in R-name, HEX or vector length 3
-#' @param color2 character or vector length 3, color in R-name, HEX or vector length 3
+#' @param color1 Character or numeric vector of length 3, the color as R-name, HEX or RGB.
+#' @param color2 Character or numeric vector of length 3, the color as R-name, HEX or RGB.
 #' @param arithmetic Logical, whether to use arithmetic scaling. See 'Details'.
 #' (default: `FALSE`)
-#' @param as_HEX Logical, whether to return the result in HEX or RGB format
+#' @param as_HEX Logical, whether to return the result in HEX or RGB format.
 #'
-#' @return character for as_HEX=`TRUE`, vector length 3 for as_HEX=`FALSE`
+#' @return Character if as_HEX=`TRUE`, vector of length 3 if as_HEX=`FALSE`.
 #' @export
 #'
 #' @examples

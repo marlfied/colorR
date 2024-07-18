@@ -16,7 +16,7 @@ rgb2hex(color, arithmetic = FALSE)
 A character.
 }
 \description{
-Return a color in HEX format given a color in RGB format, a numeric vector of length 3.
+Return a color in HEX format given a color in RGB format as a numeric vector of length 3.
 The result is returned as a character.
 }
 \details{
