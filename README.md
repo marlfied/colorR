@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/marlfied/colorR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/marlfied/colorR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of colorR is to …
+The goal of colorR is to easily convert color formats (rgb to hex and vise versa, names for R-colors to rgb/hex and vise versa). Additionally to mix two colors and plot a given color.
 
 ## Installation
 
