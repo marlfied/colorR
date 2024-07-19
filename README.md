@@ -33,7 +33,12 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(colorR)
 
+#get the hex code of a color given in RGB format
 rgb2hex(c(125,98,100))
+
+#plotting the color "lightblue"
 show_colorR("lightblue", text_color="#7f3667")
-mix("aquamarine4", "#7f3667")
+
+#mixing "aquamarine2" and "#7f3667", result in HEX format
+mix("aquamarine2", "#7f3667", as_HEX=TRUE)
 ```
