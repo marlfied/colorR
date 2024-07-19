@@ -3,8 +3,8 @@ Title: Working with diffrent color formats in R
 Version: 0.0.0.9000
 Authors@R: 
     person("Marleen", "Fiederer", email = "fiederer.marleen@gmail.com", role = c("aut", "cre"))
-Description: Convert different formats for colors: rgb to hex and vise versa, color name 
-    in R to hex/rgb, and vise versa. Mixing to colors into one (rgb, hex, and color name allowed).
+Description: Convert different formats for colors: rgb to hex and vice versa, color name 
+    in R to hex/rgb, and vice versa. Mixing to colors into one (rgb, hex, and color name allowed).
     Showing the color in a rectangular plot.
 License: GPL (>= 3)
 Encoding: UTF-8
