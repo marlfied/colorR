@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/marlfied/colorR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/marlfied/colorR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of colorR is to easily convert color formats (rgb to hex and vise versa, names for R-colors to rgb/hex and vise versa). Additionally to mix two colors and plot a given color.
+The goal of colorR is to easily convert color formats (RGB to HEX and vise versa, names of R-colors to RGB/HEX and vise versa). Additionally to mix two colors and plot a given color.
 
 ## Installation
 
@@ -33,7 +33,7 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(colorR)
 
-#get the hex code of a color given in RGB format
+#get the HEX code of a color given in RGB format
 rgb2hex(c(125,98,100))
 
 #plotting the color "lightblue"
